@@ -1,0 +1,40 @@
+{
+  "name": "ae-morph-component",
+  "version": "0.0.1",
+  "description": "adaept Morph Component",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build",
+    "now-build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll"
+  },
+  "dependencies": {
+    "ionicons": "4.6.1"
+  },
+  "devDependencies": {
+    "@stencil/core": "1.1.4",
+    "@types/jest": "24.0.15",
+    "@types/puppeteer": "1.12.4",
+    "jest": "24.8.0",
+    "jest-cli": "24.8.0",
+    "puppeteer": "1.17.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adaept/ae-morph-component.git"
+  },
+  "author": "adaept",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adaept/ae-morph-component"
+  },
+  "homepage": "https://github.com/adaept/ae-morph-component"
+}
