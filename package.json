@@ -1,6 +1,6 @@
 {
   "name": "ae-morph-component",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "adaept Morph Component",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
@@ -17,7 +17,9 @@
     "test.watch": "stencil test --spec --e2e --watchAll"
   },
   "dependencies": {
-    "ionicons": "4.6.1"
+    "@ionic/core": "4.6.0",
+    "ionicons": "4.6.1",
+    "polymorph-js": "^0.2.4"
   },
   "devDependencies": {
     "@stencil/core": "1.1.4",
