@@ -27,10 +27,7 @@ export class AeMorphComponent {
    * componentWillLoad will only be called once.
    */
   componentWillLoad() {
-    //console.log('Component ae-icons-component is about to be rendered');
-    //console.log('aesize=' + this.aesize + ' name=' + this.name + ' color=' + this.color)
-    //console.log(this.el.shadowRoot);
-    //console.log('aetype=' + this.aetype);
+    //console.log('Component ae-morph-component is about to be rendered');
   }
 
   iconClicked(evt) {
@@ -67,9 +64,16 @@ export class AeMorphComponent {
   }
 
   render() {
-    return (
-      <ion-icon class={this.aesize} name={this.name} color={this.color} onClick={this.iconClicked}></ion-icon>
-    );
+    return [
+      <ion-content class="ion-padding">
+        <ion-icon class={this.aesize} name={this.name} color={this.color} onClick={this.iconClicked}></ion-icon>
+
+        <p>
+          Welcome to the adaept morph starter using Stencil and Ionic/core!<br />
+          <a href="hhttps://github.com/adaept/ae-morph-component">aemorph</a> to get started.
+        </p>
+
+      </ion-content>
+    ];
   }
 }
-
